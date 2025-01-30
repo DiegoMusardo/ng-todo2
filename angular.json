@@ -35,6 +35,8 @@
               "src/assets"
             ],
             "styles": [
+              "/Users/Diego/Desktop/Corso Front End - Lab For Training/Angular (2)/ng-todo/node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "/Users/Diego/Desktop/Corso Front End - Lab For Training/Angular (2)/ng-todo/node_modules/bootstrap-icons/font/bootstrap-icons.min.css",
               "src/styles.css"
             ],
             "scripts": []
