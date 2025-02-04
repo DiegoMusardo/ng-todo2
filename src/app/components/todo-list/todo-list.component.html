@@ -1,1 +1,5 @@
-PIPPO
+<h1>Todo list</h1>
+<h5 class="text-muted">Numero cose da fare: {{ getDaCompletare() }}</h5>
+<div class="list-group">
+    <app-todo-item class="list-group-item" *ngFor="let t of todos" [todo]="t" (onRichiestaCompletamento)="completa($event)"></app-todo-item>
+</div>

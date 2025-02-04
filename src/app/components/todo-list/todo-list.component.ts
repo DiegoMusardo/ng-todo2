@@ -9,4 +9,19 @@ import { TODOS } from '../../data/todos';
 })
 export class TodoListComponent {
   todos: Todo[] = TODOS;
+
+  completa(id: number) {
+    console.log("Richiesta eliminazione id: ", id);
+
+    const todo = this.todos.find(t => t.id == id);
+
+    if(todo) {
+      const i = this.todos.indexOf(todo);
+      this.todos[i].completed = true;
+    }
+  }
+
+  getDaCompletare() {
+    return this.todos.filter(t => !t.completed).length;
+  }
 }
